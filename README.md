@@ -1,5 +1,4 @@
 # XSS-Detection-using-Apache-Spark-MLlib
-# Distributed XSS Attack Detection Using Apache Spark MLlib
 
 This repository contains a distributed machine learning pipeline implemented in PySpark to detect Cross-Site Scripting (XSS) attacks within large-scale network traffic data. The project addresses severe class imbalance using Cost-Sensitive Learning and evaluates parallel scalability across different Spark worker configurations.
 
