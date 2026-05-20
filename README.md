@@ -51,12 +51,36 @@ The scalability of the Random Forest model was evaluated across different Spark 
 
 The non-linear efficiency increase from 2 workers to 4 workers indicates a memory threshold effect, where distributing the workload across more executors reduced memory utilization pressure and mitigated disk I/O bottlenecks.
 
-## Repository Structure
-```text
-├── notebooks/
-│   ├── xss_detection_1_worker.ipynb
-│   ├── xss_detection_2_workers.ipynb
-│   └── xss_detection_4_workers.ipynb
-├── .gitignore
-├── README.md
-└── requirements.txt
+## Installation
+
+Install the required Python packages using:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Run the Experiments
+
+Launch Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Then open one of the following notebooks depending on the desired Spark worker configuration:
+
+- `xss_detection-1worker.ipynb`
+- `xss_detection-2workers.ipynb`
+- `xss_detection-4workers.ipynb`
+
+---
+
+## Dataset Source
+
+The CICIDS2017 dataset is publicly available from the Canadian Institute for Cybersecurity (CIC):
+
+https://www.unb.ca/cic/datasets/ids-2017.html
+
+
+
+
